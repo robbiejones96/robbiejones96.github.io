@@ -33,6 +33,26 @@ Check out my jupyter notebook [here](https://github.com/robbiejones96/LearningFr
 
 ### Problems 
 
+### 1.1
+
+We denote \\(A\\) as the event where the first ball we choose is black, and \\(B\\) as the event where
+the second ball is black.  The quantity we want to compute is \\(\mathbb{P}[B | A]\\), which we can do
+using Bayes' Theorm:
+
+$$
+	\mathbb{P}[B | A] = \frac{\mathbb{P}[B \cap A]}{\mathbb{P}[A]}.
+$$
+
+Assuming there is an equal chance that we pick either bag, then \\(\mathbb{P}[B \cap A] = 0.5\\), since
+just one of the bags has two black balls. To calculate \\(\mathbb{P}[A]\\), we notice that if we pick
+the bag with two black balls (with probability \\(0.5\\)), then \\(A\\) occurs with probability 1;
+otherwise, we pick the second bag with probability \\(0.5\\), and then \\(A\\) occurs with probability
+\\(0.5\\) (assuming that we pick the balls uniformly at random). Therefore, our final calculation becomes
+
+$$
+	\mathbb{P}[B | A] = \frac{0.5}{0.5 + 0.5 * 0.5} = \frac{2}{3}.
+$$
+
 ### 1.3
 
 (a) Since \\(\mathbf{w}^* \\) separates the data, we know that for \\(n = 1, \ldots, N\\), 
