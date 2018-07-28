@@ -59,7 +59,7 @@ now my major advisor.
 
 This was my first computer science course at Stanford!  The content wasn't much
 different from what I learned in high school, save for an introduction to
-pointers and dynamic memory in C++.  Our final assignment was creating an
+pointers and dynamic memory in C++.  Our final assignment had us create an
 Excel spreadsheet-like program that could catch cyclic references in cell
 formulas.
 ##### <a name="cs107"></a> [CS 107][cs107-url] - Computer Organization and Systems
@@ -273,7 +273,7 @@ arguments.
 
 <hr style="border-top: 3px double #8c8b8b">
 
-#### <a name="present"></a>Planned Courses (subject to change)
+#### <a name="present"></a>Current Courses
 
 
 ##### <a name="cs238"></a> [CS 238][cs238-url] - Decision Making under Uncertainty (Fall 2018)
@@ -289,10 +289,16 @@ arguments.
 
 <hr style="border-top: 3px double #8c8b8b">
 
+#### <a name="future"></a>Planned Courses (subject to change)
 
+##### <a name="cs224n"></a> [CS 224N][cs224n-url] - Natural Language Processing with Deep Learning (Winter 2019)
+[cs224n-url]: http://cs224n.stanford.edu
+{:target="_blank"}
 
+##### <a name="cs143"></a> CS 143 - Compilers (Spring 2019)
 
-
+[cs143-url]: http://cs143.stanford.edu
+{:target="_blank"}
 
 
 

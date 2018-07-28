@@ -26,10 +26,12 @@ repository: "robbiejones96/robbiejones96.github.io"
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # A list of the pages to display in the navigation bar
 header_pages:
   - courses.md
+  - work-experience.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
