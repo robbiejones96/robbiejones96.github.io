@@ -27,7 +27,7 @@ permalink: /courses
 	</div>
 </div>
 
-### [Past](#past), [present](#present), and (tentatively) [future](#future) classes:
+### [Past](#past), [present](#future), and (tentatively) [future](#future) classes:
 
 I've enjoyed nearly all of my classes at Stanford and am happy to give a
 rundown of some of my favorites.  Note that Stanford's course catalog can be
@@ -271,17 +271,8 @@ writing assignment involved constructing the Lebesgue integral via completion
 arguments.
 
 
-<hr style="border-top: 3px double #8c8b8b">
-
-#### <a name="present"></a>Current Courses
 
 
-##### <a name="cs238"></a> [CS 238][cs238-url] - Decision Making under Uncertainty (Fall 2018)
-[cs238-url]: http://cs238.stanford.edu
-{:target="_blank"}
-
-##### <a name="math230A"></a> Math 230A - Theory of Probability (Fall 2018)
-##### <a name="stats200"></a> Stats 200 - Introduction to Statistical Inference (Fall 2018)
 
 
 
@@ -290,6 +281,13 @@ arguments.
 <hr style="border-top: 3px double #8c8b8b">
 
 #### <a name="future"></a>Planned Courses (subject to change)
+
+##### <a name="cs238"></a> [CS 238][cs238-url] - Decision Making under Uncertainty (Fall 2018)
+[cs238-url]: http://cs238.stanford.edu
+{:target="_blank"}
+
+##### <a name="math230A"></a> Math 230A - Theory of Probability (Fall 2018)
+##### <a name="stats200"></a> Stats 200 - Introduction to Statistical Inference (Fall 2018)
 
 ##### <a name="cs224n"></a> [CS 224N][cs224n-url] - Natural Language Processing with Deep Learning (Winter 2019)
 [cs224n-url]: http://cs224n.stanford.edu
