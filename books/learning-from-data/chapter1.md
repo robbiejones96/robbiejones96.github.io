@@ -31,6 +31,23 @@ where we use the fact that \\(y^2(t)\|\|\mathbf{x}(t)\|\|^2\\) is strictly posit
 Check out my jupyter notebook [here](https://github.com/robbiejones96/LearningFromDataExercises/blob/master/LearningFromDataEx1-4.ipynb){:target="_blank"}.
 
 
+### 1.13
+
+(a) \\(h\\) makes an error in approximating \\(y\\) when it
+
+* incorrectly approximates \\(f(\mathbf{x})\\) with probability \\(\mu\\), and \\(y = f(\mathbf{x})\\) with probability \\(\lambda\\).
+* correctly approximates \\(f(\mathbf{x})\\) with probability \\(1 - \mu\\), and \\(y \neq f(\mathbf{x})\\) with probability \\(1 - \lambda\\).
+
+Therefore \\(\mathbb{P}[h(\mathbf{x}) \neq y] = \mu\lambda + (1 - \mu)(1 - \lambda)\\).
+
+(b) Intuitively, a value of \\(\lambda = 0.5\\) would make learning completely infeasible, since
+predicting the value of \\(y\\) is essentially identical to guessing the result of a fair coin flip.
+To justify, we plug in \\(\lambda = 0.5\\) to our result from (a) to show
+
+$$
+	\mathbb{P}[h(\mathbf{x}) \neq y] = 0.5 * \mu + (1 - \mu) * 0.5 = 0.5.
+$$
+
 ### Problems 
 
 ### 1.1
