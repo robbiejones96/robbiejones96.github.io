@@ -31,7 +31,7 @@ permalink: /courses
 
 I've enjoyed nearly all of my classes at Stanford and am happy to give a
 rundown of some of my favorites.  Note that Stanford's course catalog can be
-queried at [Explore Courses](https://explorecourses.stanford.edu){:target="_blank"}
+queried at [Explore Courses](https://explorecourses.stanford.edu){:target="_blank"}.
 
 #### <a name="past"></a> Completed Courses (Autumn 2015 - Spring 2018)
 
@@ -147,7 +147,9 @@ feet wet with basic control hijacking methods like buffer overflows and format
 string exploits, we moved to web and network security and finished the quarter
 learning the basics of mobile cybersecurity.  My favorite homework problem
 involved writing a JavaScript profile worm based on the 
-[infamous MySpace Virus][samy-url] written by Samy Kamkar.
+[infamous MySpace Virus][samy-url] written by Samy Kamkar. Having this class
+under my belt was enormously helpful during my <a href="{{ "/work-experience#intuit" | relative_url }}">
+cybersecurity internship at Intuit</a> the following summer.
 
 [samy-url]: https://en.wikipedia.org/wiki/Samy_(computer_worm)
 {:target="_blank"}
@@ -207,9 +209,9 @@ and my final project was a big role in landing an internship at Oracle the follo
 Another well-known class outside of the Stanford community, this course is probably the most
 polished out of all that I've taken so far.  The assignments were engaging, the lectures hit on
 cutting edge topics, and the Google Cloud/GPU resources were seamless. Even for people who know
-nothing about computer vision or neural networks, seeing a style transfer network take Starry Night
+nothing about computer vision or neural networks, seeing a style transfer network take *Starry Night*
 and repaint it in the style of *The Scream* is pretty cool.
-##### <a name="math50"></a> Math 50 Series ([51][math51-url], [52][math52-url], [53][math53-url]):
+##### <a name="math50"></a> Math 50 Series (51, 52, 53):
 [math51-url]: http://web.stanford.edu/class/math51/
 {:target="_blank"}
 
@@ -280,18 +282,25 @@ arguments.
 
 <hr style="border-top: 3px double #8c8b8b">
 
-#### <a name="future"></a>Planned Courses (subject to change)
+#### <a name="present"></a>Current Courses (subject to change)
 
 ##### <a name="cs238"></a> [CS 238][cs238-url] - Decision Making under Uncertainty (Fall 2018)
 [cs238-url]: http://cs238.stanford.edu
 {:target="_blank"}
 
-##### <a name="math230A"></a> Math 230A - Theory of Probability (Fall 2018)
+##### <a name="math116"></a> Math 116 - Complex Analysis (Fall 2018)
 ##### <a name="stats200"></a> Stats 200 - Introduction to Statistical Inference (Fall 2018)
+
+<hr style="border-top: 3px double #8c8b8b">
+
+#### <a name="future"></a>Planned Courses (subject to change)
 
 ##### <a name="cs224n"></a> [CS 224N][cs224n-url] - Natural Language Processing with Deep Learning (Winter 2019)
 [cs224n-url]: http://cs224n.stanford.edu
 {:target="_blank"}
+
+
+##### <a name="math175"></a> Math 175 - Functional Analysis (Winter 2019)
 
 ##### <a name="cs143"></a> CS 143 - Compilers (Spring 2019)
 

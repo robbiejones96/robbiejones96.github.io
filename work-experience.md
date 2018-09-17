@@ -25,22 +25,38 @@ I've been incredibly lucky to intern at some great companies as well as course a
 
 
 ##### <a name="intuit"></a> [Intuit][intuit-url] - Summer 2018
-I'm currently interning with Intuit's cybersecurity team in San Diego.  I've already learned so much
+This most recent summer I interned with Intuit's cybersecurity team in San Diego.  I learned a great deal
 about offensive security, how a large company works to secure its products, and good practices in
 writing safe code, among other things.
 
-My project involves researching the use of [property graphs][propgraph-url] in static code analysis.
+My project involved researching the use of [property graphs][propgraph-url] in static code analysis.
 While most static code analyzers only detect vulnerabilities based on code syntax, property graphs
 allow for the modeling of control and data flow as well, which enables a security auditer to ask
 questions like "Are there any calls to `memcpy` where the `len` argument is *attacker controlled*
-(data flow) and isn't *properly sanitized* (control flow)?" 
+(data flow) and isn't *properly sanitized* (control flow)?"
+
+To be a little more specific, I used [Joern][joern-url], which is an implementation of this
+property-graph-for-vulnerability-finding idea written by [Dr. Fabian Yamaguchi][fabian-url].
+Joern parses C/C++ codebases and outputs a Neo4j graph database to run Gremlin/Cypher queries on.
+Using Joern, I was able to discover 5 new buffer overflow vulnerabilities in the OpenJPEG library
+that I reported on GitHub. These aren't complicated or Spectre/Meltdown-level vulns, but finding
+them using this new technology was a great proof of concept for my team to move forward with my
+project after I left.
 
 [intuit-url]: https://www.intuit.com
 {:target="_blank"}
 
+
 [propgraph-url]: https://neo4j.com/developer/graph-database/#property-graph
 {:target="_blank"}
 
+
+[joern-url]: http://mlsec.org/joern/
+{:target="_blank"}
+
+
+[fabian-url]: https://fabs.codeminers.org/
+{:target="_blank"}
 ##### <a name="oracle"></a> [Oracle][oracle-url] - Summer 2017
 This was my first "big tech company" experience, and I really enjoyed it!  I worked with the NLP group
 on the [Intelligent Bots Cloud Service (IBCS)][ibcs-url], which is Oracle's venture into the chatbot space

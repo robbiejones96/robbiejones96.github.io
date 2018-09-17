@@ -140,11 +140,14 @@ $$
 	\end{align}
 $$
 
-We can use the Cauchy-Schwarz inequality to show \\(\frac{\mathbf{w}^T(t)\mathbf{w}^* }{\|\|\mathbf{w}(t)\|\|} \leq \|\|\mathbf{w}^* \|\|\\), so we conclude that
+We can use the [Cauchy-Schwarz inequality][cauchyschwarz-url] to show \\(\frac{\mathbf{w}^T(t)\mathbf{w}^* }{\|\|\mathbf{w}(t)\|\|} \leq \|\|\mathbf{w}^* \|\|\\), so we conclude that
 
 $$
 	t \leq \frac{R^2 ||\mathbf{w}^* ||^2}{\rho^2}.
 $$
+
+[cauchyschwarz-url]: https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality
+{:target="_blank"}
 
 ### 1.8 
 
@@ -225,7 +228,7 @@ Applying Markov's inequality gives us the result:
 
 $$
 	\begin{align}
-	\mathbb{P}[t \geq \alpha] &\leq \frac{\mathbb{E}_u \left[\prod_{n = 1}^N e^{su_n}\right]}{e^{Ns\alpha}} \\
+	\mathbb{P}[u \geq \alpha] &\leq \frac{\mathbb{E}_u \left[\prod_{n = 1}^N e^{su_n}\right]}{e^{Ns\alpha}} \\
 	&= \frac{\prod_{n = 1}^N \mathbb{E}_{u_n} \left[e^{su_n}\right]}{e^{Ns\alpha}} \\
 	&= \frac{\prod_{n = 1}^N U(s)}{e^{Ns\alpha}} = \left(e^{-s\alpha}U(s)\right)^N.
 	\end{align}
@@ -233,4 +236,49 @@ $$
 
 Note that we can push the expectation operator into the product because the \\(u_n\\) are iid.
 
+(c) We use the definition of expectation to evaluate
+
+$$
+	U(s) = \frac{1}{2} + \frac{1}{2}e^s.
+$$
+
+To minimize \\(e^{-s\alpha}U(s)\\), we take the derivative with respect to \\(s\\), set it equal to 0, and solve:
+
+$$
+	\begin{align}
+		\frac{d}{ds}(e^{-s\alpha}U(s)) = \frac{1}{2}(-\alpha e^{-s\alpha} + (1 - \alpha)e^{(1 - \alpha)s}) &= 0 \\
+		e^s &= \frac{\alpha}{1 - \alpha} \\
+		s &= \log\left(\frac{\alpha}{1 - \alpha}\right).
+	\end{align}
+$$
+
+We plug in this value of \\(s\\) to minimize \\(e^{-s\alpha}U(s)\\) and then simplify to make (d) easier:
+
+$$
+	\begin{align}
+		e^{-\alpha\log\left(\frac{\alpha}{1 - \alpha}\right)}\left(\frac{1}{2}e^{\log\left(\frac{\alpha}{1 - \alpha}\right)} + \frac{1}{2}\right) &= \frac{1}{2}\left(\left(\frac{\alpha}{1 - \alpha}\right)^{1 - \alpha} + \left(\frac{\alpha}{1 -\alpha}\right)^{-\alpha}\right) \\
+		&= \frac{1}{2}\left(\alpha^{1 - \alpha}(1 - \alpha)^{-(1 - \alpha)} + \alpha^{-\alpha}(1 - \alpha)^\alpha\right) \\
+		&= \frac{1}{2}\left(\alpha^{-\alpha}(1 - \alpha)^{-(1 - \alpha)}(\alpha + (1 - \alpha))\right) \\
+		&= \frac{1}{2}\left(\alpha^{-\alpha}(1 - \alpha)^{-(1 - \alpha)}\right).
+	\end{align}
+$$
+
+(d) We let \\(\alpha = \mathbb{E}(u) + \epsilon = \frac{1}{2} + \epsilon\\), so that \\(1 - \alpha = \frac{1}{2} - \epsilon\\). Note this is valid since \\(0 < \epsilon < \frac{1}{2} \implies 0 < \alpha < 1 \\). Substituting this into our result from (c) and using the exponent-log trick gives us
+
+$$
+	\begin{align}
+	2^{-1} * 2^{\log_2\left(\frac{1}{2} + \epsilon\right)^{-\left(\frac{1}{2} + \epsilon\right)}} * 2^{\log_2\left(\frac{1}{2} - \epsilon\right)^{-\left(\frac{1}{2} - \epsilon\right)}} &= 2^{-\left(1 + \left(\frac{1}{2} + \epsilon\right)\log_2\left(\frac{1}{2} + \epsilon\right) + \left(\frac{1}{2} - \epsilon\right)\log_2\left(\frac{1}{2} - \epsilon\right)\right)} \\
+	&= 2^{-\beta},
+	\end{align}
+$$
+
+where \\(\beta\\) is defined in the problem statement. Therefore from (b), since the inequality holds for
+any \\(s\\), we can conclude
+
+$$
+	\mathbb{P}[u \geq \mathbb{E}(u) + \epsilon] \leq 2^{-\beta N}.
+$$
+
+By taking derivatives, one can show that the minimum value of \\(\beta\\) occurs at \\(\epsilon = 0\\), so we
+conclude \\(\beta > 0\\) for \\(0 < \epsilon < \frac{1}{2}\\), finishing the proof.
 
