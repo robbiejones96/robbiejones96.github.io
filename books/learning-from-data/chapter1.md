@@ -346,5 +346,5 @@ $$
 	h_{\text{mean}} = \frac{1}{N}\sum_{n = 1}^{N - 1} y_n + y_N + \epsilon \xrightarrow{\epsilon \to \infty} \infty,
 $$
 
-while \\(h_{\text{med}}\\) is not affected by this outlier.
+i.e., this outlier causes \\(h_{\text{mean}}\\) to blow up.  However, \\(h_{\text{med}}\\) at most will jump to the next highest value of \\(y_n\\) or not be affected at all, depending on where \\(y_N\\) falls in the order of the \\(y_n\\).
 
