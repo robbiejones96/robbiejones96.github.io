@@ -282,3 +282,69 @@ $$
 By taking derivatives, one can show that the minimum value of \\(\beta\\) occurs at \\(\epsilon = 0\\), so we
 conclude \\(\beta > 0\\) for \\(0 < \epsilon < \frac{1}{2}\\), finishing the proof.
 
+### 1.10
+
+(a) To simplify, we assume that all the points in \\(\mathcal{X}\\) are unique, which implies
+
+$$
+	E_{\text{off}}(h, f) = \frac{1}{M}\left\lfloor\frac{M}{2}\right\rfloor,
+$$
+
+since \\(h\\) makes an error whenever \\(\mathbf{x} = \mathbf{x}_k\\) and \\(k\\) is even.
+
+
+(b) If \\(f\\) generates \\(\mathcal{D}\\), then its output on the first \\(N\\) points are fixed. There are \\(2^M\\) possible outputs on the remaining \\(M\\) points, so we conclude that there are \\(2^M\\) such \\(f\\).
+
+(c) There are \\(\binom{M}{k}\\) ways for \\(f\\) and \\(h\\) to disagree on \\(k\\) points, which is the same as saying there are \\(\binom{M}{k}\\) choices of \\(f\\) with \\(E_{\text{off}}(h, f) = \frac{k}{M}\\). To check our work, we can use a trick using the binomial theorem to show
+
+$$
+	2^M = (1 + 1)^M = \sum_{k = 0}^M \binom{M}{k}.
+$$
+
+(d) If every \\(f\\) is equally likely, then the definition of expectation says
+
+$$
+	\mathbb{E}_f[E_{\text{off}}(h, f)] = \frac{1}{2^M}\sum_{k = 0}^M \binom{M}{k}\frac{k}{M}.
+$$
+
+To simplify even further, we can use the identity \\(\sum_{k = 0}^M k\binom{M}{k} = M2^{M - 1}\\) to show
+
+$$
+	\mathbb{E}_f[E_{\text{off}}(h, f)] = \frac{1}{2}.
+$$
+
+(d) We note that the expression for the expected off-training-set error does not depend on the hypothesis \\(h\\), so we can conclude that no matter what hypotheses \\(A_1\\) and \\(A_2\\) choose, the expected error will be the same.
+
+### 1.11
+
+(a) This is a classic example of a single-variable function that we can minimize via taking the derivative:
+
+$$
+	\begin{align}
+		\frac{d}{dh}E_{\text{in}}(h) = 2\sum_{n = 1}^N (h - y_n) &= 0 \\
+		Nh - \sum_{n = 1}^N y_n &= 0 \\
+		h &= \frac{1}{N}\sum_{n = 1} y_n,
+	\end{align}
+$$
+
+so we conclude that the value that minimizes \\(E_{\text{in}}(h)\\) is the sample mean.
+
+(b) We can also take the derivative for this form of \\(E_{\text{in}}(h)\\). Using the identity
+\\(\frac{d}{dx}|x| = \frac{|x|}{x} = \text{sign}(x)\\), we have
+
+$$
+	\frac{d}{dh}E_{\text{in}}(h) = \sum_{n = 1}^N \text{sign}(h - y_n) = 0.
+$$
+
+For this quantity to be 0, we must have as many values of \\(h - y_n\\) that are positive as there are negative.
+This means \\(h\\) should be the *median* of the \\(y_n\\) (or in the case that \\(N\\) is even, any value in between
+the two median values).
+
+(c) It is clear that
+
+$$
+	h_{\text{mean}} = \frac{1}{N}\sum_{n = 1}^{N - 1} y_n + y_N + \epsilon \xrightarrow{\epsilon \to \infty} \infty,
+$$
+
+while \\(h_{\text{med}}\\) is not affected by this outlier.
+
