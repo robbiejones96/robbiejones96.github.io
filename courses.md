@@ -131,7 +131,7 @@ the struggle I'm very glad to have taken this course.
 [cs145-url]: http://cs145.stanford.edu
 {:target="_blank"}
 
-Taught by the enigmatic [Chris Re][chris-url], this was a fun introduction to the
+Taught by the charismatic [Chris Re][chris-url], this was a fun introduction to the
 world of databases.  About half the quarter was spent on the basics of SQL and
 creating schemas, while the second half focused on higher-level concepts such
 as join algorithms and query optimization.
