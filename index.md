@@ -7,9 +7,9 @@ title: Home
   <h1 class="display-4">Thanks for stopping by!</h1>
   <h4>I'm Robbie, and I'm currently a rising senior studying computer science and mathematics at Stanford University. </h4>
   <hr class="my-4">
-  <h5>The site's pretty bare for now but I'm working on it! For now you can check out the <a href="{{ "/courses" | relative_url }}">courses</a> I've taken at Stanford through my first three years.</h5>
+  <h5>The site's going through a lot of changes as I keep playing with it, so don't be surprised if it looks completely different tomorrow! For now you can check out the <a href="{{ "/courses" | relative_url }}">courses</a> I've taken at Stanford through my first three years, as well as my relevant <a href="{{ "/work-experience" | relative_url }}">job experience</a>.</h5>
 
-  This summer, I'll be  
+  This summer, I've been  
 
   <ul>
   		<li>
